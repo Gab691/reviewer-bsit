@@ -64,11 +64,11 @@ const introToProgramming = [
               'Consisting of: ',
               <div className="card pl-8" style={{marginTop: '-2rem'}}>
                 <ul className="list-disc p-3 text-slate-500" >
-                  <li><b>Public</b> : accessible to JVM</li>
-                  <li><b>Static</b> : belongs to the class, not the object</li>
-                  <li><b>Void</b> : no return value</li>
-                  <li><b>Main</b> : name of the method</li>
-                  <li><b>String[] args</b> : command line arguments</li>
+                  <li className='p-2'><b>Public</b> : accessible to JVM</li>
+                  <li className='p-2'><b>Static</b> : belongs to the class, not the object</li>
+                  <li className='p-2'><b>Void</b> : no return value</li>
+                  <li className='p-2'><b>Main</b> : name of the method</li>
+                  <li className='p-2'><b>String[] args</b> : command line arguments</li>
                 </ul>
               </div>,
             ]
@@ -78,11 +78,11 @@ const introToProgramming = [
             items: [
               'Variables are used to store data values.',
               'There are three types of variables:',
-              <div className="card pl-8" style={{marginTop: '-2rem'}}>
+              <div className="card pl-8 mt-2" style={{marginTop: '-2rem'}}>
                 <ul className="list-disc p-3 text-slate-500" >
-                  <li><b>Local Variables</b> : accessible to JVM</li>
-                  <li><b>Instance Variables</b> : belongs to the object</li>
-                  <li><b>Class Variables</b> : belongs to the class</li>
+                  <li className='p-2'><b>Local Variables</b> : accessible to JVM</li>
+                  <li className='p-2'><b>Instance Variables</b> : belongs to the object</li>
+                  <li className='p-2'><b>Class Variables</b> : belongs to the class</li>
                 </ul>
               </div>,
               'Data types: ',
@@ -93,23 +93,23 @@ const introToProgramming = [
                 <p>1. Primitive Data Types</p>
                 <p><i>These are the basic built-in types in Java. There are 8 primitive data types.</i></p>
                 <ul className="list-disc p-3">
-                  <li><b>boolean</b> : 1-bit, True or false (<b>example:</b> 1, 0 in binary)</li>
-                  <li><b>byte</b> : 8-bit / 1 byte, Stores whole numbers from -128 to 127</li>
-                  <li><b>char</b> : 16-bit / 2 byte, Single character (<b>example:</b> 'A', 'B', 'C')</li>
-                  <li><b>short</b> : 16-bit / 2 byte, Stores whole numbers from -32,768 to 32,767</li>
-                  <li><b>int</b> : 32-bit / 4 byte, Stores whole numbers, commonly used for integers</li>
-                  <li><b>float</b> : 32-bit / 4 byte, Stores decimal numbers, single precision, real numbers (<b>example:</b> currency 4.55 pesos)</li>
-                  <li><b>long</b> : 64-bit / 8 byte, Very large integers, long integers, ( <b>example:</b> 12 telephone numbers)</li>
-                  <li><b>double</b> : 64-bit / 8 byte, Double-precision floating-point numbers (<b>example:</b> gpa 4.5870)</li>
+                  <li className='p-2'><b>boolean</b> : 1-bit, True or false (<b>example:</b> 1, 0 in binary)</li>
+                  <li className='p-2'><b>byte</b> : 8-bit / 1 byte, Stores whole numbers from -128 to 127</li>
+                  <li className='p-2'><b>char</b> : 16-bit / 2 byte, Single character (<b>example:</b> 'A', 'B', 'C')</li>
+                  <li className='p-2'><b>short</b> : 16-bit / 2 byte, Stores whole numbers from -32,768 to 32,767</li>
+                  <li className='p-2'><b>int</b> : 32-bit / 4 byte, Stores whole numbers, commonly used for integers</li>
+                  <li className='p-2'><b>float</b> : 32-bit / 4 byte, Stores decimal numbers, single precision, real numbers (<b>example:</b> currency 4.55 pesos)</li>
+                  <li className='p-2'><b>long</b> : 64-bit / 8 byte, Very large integers, long integers, ( <b>example:</b> 12 telephone numbers)</li>
+                  <li className='p-2'><b>double</b> : 64-bit / 8 byte, Double-precision floating-point numbers (<b>example:</b> gpa 4.5870)</li>
                 </ul>
-                <p>2. Non-Primitive Data Types</p>
-                <p><i>These types are created by the programmer and refer to objects.</i></p>
+                <p className='p-2'>2. Non-Primitive Data Types</p>
+                <p className='p-2'><i>These types are created by the programmer and refer to objects.</i></p>
                 <ul className="list-disc p-3">
-                  <li><b>String</b> : Stores text or characters or sequence of characters ( <b>example:</b> Juan Dela Cruz.) <i className='text-sm'>Note: Must be inside a quotation mark " " / ' '</i></li>
-                  <li><b>Array</b> : Stores multiple values of the same type or collection of similar data types</li>
-                  <li><b>Class</b> : Stores custom data types or blueprint for objects (<b>example:</b> Student, Car. A real world scenario)</li>
-                  <li><b>Interface</b> : Stores method signatures</li>
-                  <li><b>Object</b> : Root of all classes in Java</li>
+                  <li className='p-2'><b>String</b> : Stores text or characters or sequence of characters ( <b>example:</b> Juan Dela Cruz.) <i className='text-sm'>Note: Must be inside a quotation mark " " / ' '</i></li>
+                  <li className='p-2'><b>Array</b> : Stores multiple values of the same type or collection of similar data types</li>
+                  <li className='p-2'><b>Class</b> : Stores custom data types or blueprint for objects (<b>example:</b> Student, Car. A real world scenario)</li>
+                  <li className='p-2'><b>Interface</b> : Stores method signatures</li>
+                  <li className='p-2'><b>Object</b> : Root of all classes in Java</li>
                 </ul>
                 <p>Why Data Types Are Important in Java</p>
                 <p>: <b>Memory Management</b> – Ensures efficient use of memory based on data size.</p>
@@ -232,51 +232,51 @@ const introToProgramming = [
               'Operators:',
               <div className="card pl-8 text-slate-500" style={{marginTop: '-2\rem'}}>
                 <span>
-                <h1>In Java, operators are special symbols that perform operations on variables and values.
+                <h1 className='p-2'>In Java, operators are special symbols that perform operations on variables and values.
                 They are used to manipulate data, perform calculations, and make decisions in a program.</h1>
                 </span>
                 <br></br>
-                <p>1. Arithmetical Operators</p>
-                <p><i>Used to perform basic mathematical operations.</i></p>
+                <p className='p-2'>1. Arithmetical Operators</p>
+                <p className='p-2'><i>Used to perform basic mathematical operations.</i></p>
                 <ul className="list-disc p-3">
-                  <li><b>+ </b> : Adds two values</li>
-                  <li><b>- </b> : Subtracts two values</li>
-                  <li><b>* </b> : Multiplies two values</li>
-                  <li><b>/ </b> : Divides two values</li>
-                  <li><b>% </b> : Returns the remainder of a division operation</li>
+                  <li className='p-2'><b>+ </b> : Adds two values</li>
+                  <li className='p-2'><b>- </b> : Subtracts two values</li>
+                  <li className='p-2'><b>* </b> : Multiplies two values</li>
+                  <li className='p-2'><b>/ </b> : Divides two values</li>
+                  <li className='p-2'><b>% </b> : Returns the remainder of a division operation</li>
                 </ul>
                 <p>2. Relational (Comparison) operators</p>
                 <p><i>Used to compare values and return a boolean result.</i></p>
                 <ul className="list-disc p-3">
-                  <li><b>== </b> : Checks if two values are equal</li>
-                  <li><b>!= </b> : Checks if two values are not equal</li>
-                  <li><b>&gt; </b> : Checks if a value is greater than another value</li>
-                  <li><b>&lt; </b> : Checks if a value is less than another value</li>
-                  <li><b>&gt;= </b> : Checks if a value is greater than or equal to another value</li>
-                  <li><b>&lt;= </b> : Checks if a value is less than or equal to another value</li>
+                  <li className='p-2'><b>== </b> : Checks if two values are equal</li>
+                  <li className='p-2'><b>!= </b> : Checks if two values are not equal</li>
+                  <li className='p-2'><b>&gt; </b> : Checks if a value is greater than another value</li>
+                  <li className='p-2'><b>&lt; </b> : Checks if a value is less than another value</li>
+                  <li className='p-2'><b>&gt;= </b> : Checks if a value is greater than or equal to another value</li>
+                  <li className='p-2'><b>&lt;= </b> : Checks if a value is less than or equal to another value</li>
                 </ul>
                 <p>3. Logical Operators</p>
                 <p><i>Used to combine multiple conditions.</i></p>
                 <ul className="list-disc p-3">
-                  <li><b>&amp;&amp; </b> : Logical for AND</li>
-                  <li><b>|| </b> : Logical for OR</li>
-                  <li><b>! </b> : Logical for NOT</li>
+                  <li className='p-2'><b>&amp;&amp; </b> : Logical for AND</li>
+                  <li className='p-2'><b>|| </b> : Logical for OR</li>
+                  <li className='p-2'><b>! </b> : Logical for NOT</li>
                 </ul>
                 <p>4. Assignment Operators</p>
                 <p><i>Used to assign values to variables.</i></p>
                 <ul className="list-disc p-3">
-                  <li><b>= </b> : Assigns a value to a variable</li>
-                  <li><b>+= </b> : Adds a value to a variable and assigns the result to the variable</li>
-                  <li><b>-= </b> : Subtracts a value from a variable and assigns the result to the variable</li>
-                  <li><b>*= </b> : Multiplies a value by a variable and assigns the result to the variable</li>
-                  <li><b>/= </b> : Divides a value by a variable and assigns the result to the variable</li>
-                  <li><b>%= </b> : Returns the remainder of a division operation and assigns the result to the variable</li>
+                  <li className='p-2'><b>= </b> : Assigns a value to a variable</li>
+                  <li className='p-2'><b>+= </b> : Adds a value to a variable and assigns the result to the variable</li>
+                  <li className='p-2'><b>-= </b> : Subtracts a value from a variable and assigns the result to the variable</li>
+                  <li className='p-2'><b>*= </b> : Multiplies a value by a variable and assigns the result to the variable</li>
+                  <li className='p-2'><b>/= </b> : Divides a value by a variable and assigns the result to the variable</li>
+                  <li className='p-2'><b>%= </b> : Returns the remainder of a division operation and assigns the result to the variable</li>
                 </ul>
                 <p>5. Increment/Decrement Operators</p>
                 <p><i>Used to increment or decrement the value of a variable.</i></p>
                 <ul className="list-disc p-3">
-                  <li><b>++ </b> : Increments the value of a variable by 1</li>
-                  <li><b>-- </b> : Decrements the value of a variable by 1</li>
+                  <li className='p-2'><b>++ </b> : Increments the value of a variable by 1</li>
+                  <li className='p-2'><b>-- </b> : Decrements the value of a variable by 1</li>
                 </ul>
               </div>,
               'Now we are done with Operators. Samot tag kabuang ani.',

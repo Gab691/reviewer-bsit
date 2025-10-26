@@ -242,13 +242,13 @@ export default function ComprehensiveReviewer() {
                             {!subsection.items && (
                               <p className="text-gray-500 italic">No Content Found!</p>
                             )}
-                            <p className="text-gray-500 italic mt-10">You've reached the end of this section! Congratulations! Don't forget to take a rest.</p>
                           </div>
                         ))
                       ) : (
                         <p className="text-gray-500 italic">No content available for this section.</p>
                       )}
                     </div>
+                    <p className="text-gray-500 italic mt-10">You've reached the end of this section! Congratulations! Don't forget to take a rest.</p>
                   </div>
                 );
               })}
@@ -411,6 +411,7 @@ export default function ComprehensiveReviewer() {
                         </div>
                       ))}
                     </div>
+                    <p className="text-gray-500 italic mt-10">You've reached the end of this section! Congratulations! Don't forget to take a rest.</p>
                   </div>
                 );
               })}
@@ -469,13 +470,13 @@ export default function ComprehensiveReviewer() {
                             {!subsection.items && (
                               <p className="text-gray-500 italic">No Content Found!</p>
                             )}
-                            <p className="text-gray-500 italic mt-10">You've reached the end of this section! Congratulations! Don't forget to take a rest.</p>
                           </div>
                         ))
                       ) : (
                         <p className="text-gray-500 italic">No content available for this section.</p>
                       )}
                     </div>
+                    <p className="text-gray-500 italic mt-10">You've reached the end of this section! Congratulations! Don't forget to take a rest.</p>
                   </div>
                 );
               })}
