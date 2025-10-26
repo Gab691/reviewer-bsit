@@ -1,26 +1,99 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+/* @tailwind utilities; 
+@layer components {
+  .btn {
+    @apply px-4 py-2 rounded-lg font-medium transition-all duration-200;
+  }
+  
+  .btn-primary {
+    @apply bg-gradient-to-br from-primary-600 to-secondary-600 text-white shadow-lg hover:shadow-xl transform hover:-translate-y-0.5;
+  }
+  
+  .card {
+    @apply bg-white rounded-xl shadow-md overflow-hidden;
+  }
+  
+  .section-title {
+    @apply text-2xl sm:text-3xl font-bold bg-gradient-to-br from-primary-600 to-secondary-600 bg-clip-text text-transparent;
+  }
+  
+  .subsection-title {
+    @apply text-lg sm:text-xl font-semibold text-primary-700 mb-4 pl-2 border-l-4 border-primary-400;
+  }
+} */
+
+
+/* width */
+::-webkit-scrollbar {
+  width: 7px;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #666;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+/* Add this for the fade-in animation */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* #responsiveness-design-pc-layout {
+    min-width: 1024 minimum width
+} */
+
+/* #responsiveness-design-cp-layout {
+    max-width: 1024 maximum width
+    min-width: 412 minimum width
+} */
+
+
+@media (min-width: 412px) and (max-width: 1024px) {
+  #responsiveness-design-pc-layout {
+    display: none;
+    visibility: hidden;
+  } 
+
+  #responsiveness-design-cp-layout {
+    display: block;
+    visibility: visible;
+  }
+
+  .card {
+    size: 100%;
   }
 }
 
-body {
+@media (min-width: 1025px) {
+  #responsiveness-design-pc-layout {
+    display: block;
+    visibility: visible;
+  } 
+
+  #responsiveness-design-cp-layout {
+    display: none;
+    visibility: hidden;
+  }
+}
+
+.animate-fadeIn {
+  animation: fadeIn 0.3s ease-out forwards;
+}
+
+/* body {
   background: var(--background);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
-}
+} */ 
