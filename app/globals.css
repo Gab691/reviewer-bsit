@@ -63,7 +63,7 @@
   list-style-type: none;
 }
 
-@media (min-width: 412px) and (max-width: 1024px) {
+@media (min-width: 320px) and (max-width: 1024px) {
   #responsiveness-design-pc-layout {
     display: none;
     visibility: hidden;

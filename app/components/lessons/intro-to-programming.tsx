@@ -1,6 +1,6 @@
 'use client';
 
-import { BookOpen, Cpu, Network, History, Wrench, Calculator, Computer, MonitorCog, Cable, Code } from 'lucide-react';
+import { BookOpen, Cpu, Network, History, Wrench, Calculator, Computer, MonitorCog, Cable, Code, Workflow } from 'lucide-react';
 import CodeCard from '../code/card';
 
 const introToProgramming = [
@@ -346,6 +346,291 @@ a--; // a = a - 1`}
                 />
               </div>,
               'Now we are done with Operators. Familiarize ra ayaw i memorize HAHAHAHA',
+            ]
+          }
+        ]
+      },
+      {
+        id: 'control-flow',
+        title: 'Java Control Flow',
+        icon: Workflow,
+        content: [
+          {
+            subtitle: 'Java Control Flow',
+            items: [
+              <div className='ml-5 text-slate-700'>
+                <h1><b>What is Control flow?</b></h1>
+                <p> - Control flow refers to the order in which individual statements, instructions, or function calls are executed or evaluated in a program.</p>
+                <p> - It is a fundamental concept in programming that determines the sequence in which code is executed.</p>
+                <br></br>
+                <p>By default, Java executes <b>statements</b> from top to bottom, one after another.
+However, with control flow statements.</p>
+                <span>You can: </span>
+                <ul className="list-disc p-3">
+                  <li>Make decisions based on conditions <b>( if, else, switch )</b></li>
+                  <li>Repeat actions multiple times <b>( for, while, do-while )</b></li>
+                  <li>Jump out of loops <b>( break, continue )</b></li>
+                </ul>
+              </div>,
+              'Decision Making Statements.',
+              <div className='text-slate-700 pl-8'>
+                <p>Decision Making Statements Syntax: </p>
+                <div>
+                  <p className='p-2'><i><b>If else / If statement syntax</b></i></p>
+                  <CodeCard
+                    title="If else / If statement syntax"
+                    language="Java"
+                    code={`if (condition) {
+    // code to execute if condition is true
+} else {
+    // code to execute if condition is false
+}`}
+                  />
+                </div>
+                <br></br>
+                <div>
+                  <p className='p-2'><i><b>Else if statement syntax</b></i></p>
+                  <CodeCard
+                    title="Else if statement syntax"
+                    language="Java"
+                    code={`if (condition1) {
+    // code to execute if condition1 is true
+} else if (condition2) {
+    // code to execute if condition2 is true
+} else {
+    // code to execute if condition1 and condition2 are false
+}`}
+                  />
+                </div>
+                <br></br>
+                <div>
+                  <p className='p-2'><i><b>Switch statement syntax</b></i></p>
+                  <CodeCard
+                    title="Switch statement syntax"
+                    language="Java"
+                    code={`switch (expression / variable) {
+    case value1:
+        // code to execute if expression equals value1
+        break;
+    case value2:
+        // code to execute if expression equals value2
+        break;
+    default:
+        // code to execute if expression does not match any case
+}`}
+                  />
+                </div>
+                <br></br>
+                <div>
+                  <p className='p-2'><i><b>For Loop statement syntax</b></i></p>
+                  <CodeCard
+                    title="For Loop statement syntax"
+                    language="Java"
+                    code={`for (int i = 0; i < 10; i++) {
+    // code to execute in each iteration
+}`}
+                  />
+                </div>
+                <br></br>
+                <div>
+                  <p className='p-2'><i><b>While Loop statement syntax</b></i></p>
+                  <CodeCard
+                    title="While Loop statement syntax"
+                    language="Java"
+                    code={`while (condition) {
+    // code to execute while condition is true
+}`}
+                  />
+                </div>
+                <br></br>
+                <div>
+                  <p className='p-2'><i><b>Do-While Loop statement syntax</b></i></p>
+                  <CodeCard
+                    title="Do-While Loop statement syntax"
+                    language="Java"
+                    code={`do {
+    // code to execute while condition is true
+} while (condition);`}
+                  />
+                </div>
+                <br></br>
+                <div>
+                  <p className='p-2'><i><b>Jump 'Break' statement syntax</b></i></p>
+                  <CodeCard
+                    title="Break statement syntax"
+                    language="Java"
+                    code={`break;`}
+                  />
+                </div>
+                <br></br>
+                <div>
+                  <p className='p-2'><i><b>Jump 'Continue' statement syntax</b></i></p>
+                  <CodeCard
+                    title="Continue statement syntax"
+                    language="Java"
+                    code={`continue;`}
+                  />
+                </div>
+                <br></br>
+                <div>
+                  <p className='p-2'><i><b>Return statement syntax</b></i></p>
+                  <CodeCard
+                    title="Return statement syntax"
+                    language="Java"
+                    code={`return;`}
+                  />
+                </div>
+                <br></br>
+                <div>
+                  <p className='p-2'><i><b>Nested Control Flow statement syntax</b></i></p>
+                  <CodeCard
+                    title="Nested Control Flow statement syntax"
+                    language="Java"
+                    code={`if (condition) {
+    // code to execute if condition is true
+    if (condition2) {
+        // code to execute if condition2 is true
+    }
+}`}
+                  />
+                </div>
+              </div>,
+              <div>
+                  <p className='p-2'><i><b>Real world analogy example</b></i></p>
+                  <p className='text-slate-700 pl-5'>Imagine a Java program as a recipe:</p>
+                  <ul className="list-disc pl-8 pt-2 text-slate-700">
+                    <li><b>Decision statements</b> decide what ingredient to use (if sugar &gt; 100g, skip).</li>
+                    <li><b>Loops</b> stir or repeat steps until done (e.g., “mix until smooth”).</li>
+                    <li><b>Break</b> stops the process early (e.g., “stop cooking if boiling”).</li>
+                    <li><b>Continue</b> skips to the next step.</li>
+                  </ul>
+              </div>,
+              <div>
+                <h1><i><b>Condition Statement Examples</b></i></h1>
+                <p><i>Statement Syntax examples</i></p>
+              </div>,
+              <div className='ml-5 text-slate-700'>
+                <ul className="list-disc p-3">
+                  <li className="font-bold pb-5">1. If statement</li>
+                  <li>
+                    <div  key="local-if-statement-card">
+                      <CodeCard
+                        title="If statement Example"
+                        language="Java"
+                        code={`if (5 < 10) {
+    System.out.println("5 is less than 10");
+}`}
+                      />
+                    </div>
+                  </li>
+                  <li className="font-bold pb-5 pt-10">2. If-else statement</li>
+                  <li>
+                    <div  key="local-if-else-statement-card">
+                      <CodeCard
+                        title="If-else statement Example"
+                        language="Java"
+                        code={`if (5 < 10) {
+    System.out.println("5 is less than 10");
+} else {
+    System.out.println("5 is not less than 10");
+}`}
+                      />
+                    </div>
+                  </li>
+                  <li className="font-bold pb-5 pt-10">3. If-else if else ladder statement</li>
+                  <li>
+                    <div  key="local-if-else-statement-card">
+                      <CodeCard
+                        title="If-else if else ladder statement Example"
+                        language="Java"
+                        code={`if (5 < 10) {
+    System.out.println("5 is less than 10");
+} else if (5 == 10) {
+    System.out.println("5 is equal to 10");
+} else if (5 > 10) {
+    System.out.println("5 is greater than 10");
+} else {
+    System.out.println("5 is not less than 10");
+}`}
+                      />
+                    </div>
+                  </li>
+                  <li className="font-bold pb-5 pt-10">4. Switch statement</li>
+                  <li>
+                    <div  key="local-if-else-statement-card">
+                      <CodeCard
+                        title="Switch statement Example"
+                        language="Java"
+                        code={`switch (day) {
+    case 1:
+        System.out.println("Monday");
+        break;
+    case 2:
+        System.out.println("Tuesday");
+        break;
+    case 3:
+        System.out.println("Wednesday");
+        break;
+    case 4:
+        System.out.println("Thursday");
+        break;
+    case 5:
+        System.out.println("Friday");
+        break;
+    case 6:
+        System.out.println("Saturday");
+        break;
+    case 7:
+        System.out.println("Sunday");
+        break;
+    default:
+        System.out.println("Invalid day");
+}`}
+                      />
+                    </div>
+                  </li>
+                  <li className="font-bold pb-5 pt-10">5. For loop statement</li>
+                  <li>
+                    <div  key="local-if-else-statement-card">
+                      <CodeCard
+                        title="For loop statement Example"
+                        language="Java"
+                        code={`for(int i; i < 10; i++) {
+    System.out.println(i);
+}
+    output: 1 2 3 4 5 6 7 8 9`}
+                      />
+                    </div>
+                  </li>
+                  <li className="font-bold pb-5 pt-10">6. While loop statement</li>
+                  <li>
+                    <div  key="local-if-else-statement-card">
+                      <CodeCard
+                        title="While loop statement Example"
+                        language="Java"
+                        code={`while (condition) {
+    // code to execute while condition is true
+}`}
+                      />
+                    </div>
+                  </li>
+                  <li className="font-bold pb-5 pt-10">6. While loop statement</li>
+                  <li>
+                    <div  key="local-if-else-statement-card">
+                      <CodeCard
+                        title="While loop statement Example"
+                        language="Java"
+                        code={`while (condition) {
+    // code to execute while condition is true
+}`}
+                      />
+                    </div>
+                  </li>
+                </ul>
+              </div>,
+              <div>
+                <p>With the example above. </p>
+              </div>
             ]
           }
         ]
