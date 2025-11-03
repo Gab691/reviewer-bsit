@@ -1,10 +1,10 @@
 'use client';
 
-import { BookOpen, Cpu, Network, History, Wrench, Calculator, Computer, MonitorCog, Cable, Code, Workflow } from 'lucide-react';
+import { Code, Workflow, Brackets, Book } from 'lucide-react';
 import CodeCard from '../code/card';
 
 const introToProgramming = [
-      {
+      { // Fundamental to java / introduction
         id: 'introToProgramming',
         title: 'Introduction to Programming',
         icon: Code,
@@ -98,7 +98,7 @@ const introToProgramming = [
                   <li className='p-2'><b>char</b> : 16-bit / 2 byte, Single character (<b>example:</b> 'A', 'B', 'C')</li>
                   <li className='p-2'><b>short</b> : 16-bit / 2 byte, Stores whole numbers from -32,768 to 32,767</li>
                   <li className='p-2'><b>int</b> : 32-bit / 4 byte, Stores whole numbers, commonly used for integers</li>
-                  <li className='p-2'><b>float</b> : 32-bit / 4 byte, Stores decimal numbers, single precision, real numbers (<b>example:</b> currency 4.55 pesos)</li>
+                  <li className='p-2'><b>float</b> : 32-bit / 4 byte, Stores decimal numbers, single precision, real numbers (<b>example:</b> currency 4.55 pesos.  19.99 or -19.99)</li>
                   <li className='p-2'><b>long</b> : 64-bit / 8 byte, Very large integers, long integers, ( <b>example:</b> 12 telephone numbers)</li>
                   <li className='p-2'><b>double</b> : 64-bit / 8 byte, Double-precision floating-point numbers (<b>example:</b> gpa 4.5870)</li>
                 </ul>
@@ -350,7 +350,7 @@ a--; // a = a - 1`}
           }
         ]
       },
-      {
+      { // Control flow of java or decision statements
         id: 'control-flow',
         title: 'Java Control Flow',
         icon: Workflow,
@@ -634,7 +634,178 @@ However, with control flow statements.</p>
             ]
           }
         ]
+      },
+      { // Java arrays
+        id: "java-array",
+        title: "Java Array",
+        icon: Brackets,
+        content: [
+          {
+            subtitle: "Java Array",
+            items: [
+              'What is java array?',
+              <div className='text-slate-700 pl-5'>
+                <p>Arrays are used to store multiple values in a single variable, instead of declaring separate variables for each value.</p>
+                <p>To declare an array, define the variable type with <b>square brackets [ ]</b> :</p>
+                <div className='pt-3 pb-5'>
+                  <CodeCard
+                  title="Array declaration Syntax"
+                  language="Java"
+                  code={`DataType[] variable;`}
+                />
+                </div>
+                <div className=''>
+                  <p>We have now declared a variable that holds an array of strings. To insert values to it, 
+                    you can place the values in a comma-separated list, inside <b>curly braces {'{'} {'}'} </b>:</p>
+                </div>
+                <div className='pt-3 pb-5'>
+                  <div >
+                    <CodeCard
+                    title="Array declaration Example"
+                    language="Java"
+                    code={`String[] cars = {"Volvo", "BMW", "Ford", "Mazda"};`}
+                    />
+                  </div>
+                </div>
+                <p className='font-semibold'>To create an array of integers, you could write:</p>
+                <div className='pt-3'>
+                  <div >
+                    <CodeCard
+                    title="Array declaration Example"
+                    language="Java"
+                    code={`int[] myNum = {10, 20, 30, 40, 50};`}
+                    />
+                  </div>
+                </div>
+              </div>,
+              'Access the Elements of an Array',
+              <div className='text-slate-700 pl-5'>
+                <p>You can access an array element by referring to the index number.</p>
+                <p>Array indexes start with 0: <br></br><span className='pt-2 pb-5'><b>cars[0]</b> will return "Volvo"</span></p>
+                <div className='pt-3'>
+                  <div>
+                    <CodeCard
+                    title="Array declaration Example"
+                    language="Java"
+                    code={`String[] cars = {"Volvo", "BMW", "Ford", "Mazda"};
+System.out.println(cars[0]);
+// Outputs Volvo`}
+                    />
+                  </div>
+                </div>
+              </div>,
+              <div className='text-slate-700 pl-5 mb-6'>
+                <div className='overflow-x-auto'>
+                  <p className='text-md text-gray-500 p-3'>How to read an array index</p>
+                  <table className='min-w-full border border-gray-200 rounded-lg overflow-hidden'>
+                    <thead className='bg-gray-400'> 
+                      <tr>
+                        <th className='px-4 py-2 text-left text-sm font-medium text-gray-700 border-b border-gray-800'>Index</th>
+                        <th className='px-4 py-2 text-center text-sm font-medium text-gray-700 border-b border-gray-800'>0</th>
+                        <th className='px-4 py-2 text-center text-sm font-medium text-gray-700 border-b border-gray-800'>1</th>
+                        <th className='px-4 py-2 text-center text-sm font-medium text-gray-700 border-b border-gray-800'>2</th>
+                        <th className='px-4 py-2 text-center text-sm font-medium text-gray-700 border-b border-gray-800'>3</th>
+                      </tr>
+                    </thead>
+                    <tbody className='bg-white'>
+                      <tr className='hover:bg-gray-50'>
+                        <td className='px-4 py-3 text-sm font-medium text-gray-900 border-b border-gray-200'>Value</td>
+                        <td className='px-4 py-3 text-sm text-center text-gray-600 border-b border-gray-200'>Volvo</td>
+                        <td className='px-4 py-3 text-sm text-center text-gray-600 border-b border-gray-200'>BMW</td>
+                        <td className='px-4 py-3 text-sm text-center text-gray-600 border-b border-gray-200'>Ford</td>
+                        <td className='px-4 py-3 text-sm text-center text-gray-600 border-b border-gray-200'>Mazda</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <p className='mt-2 text-sm text-gray-500'>Table 1: Array index and corresponding values</p>
+              </div>,
+              'Change an Array Element',
+              <div className='text-md text-gray-700 pl-5'>
+                <p>Arrays are mutable, meaning that you can change their values after they are created.</p>
+                <p>To change the value of a specific element, refer to the index number:</p>
+                <div className='pt-3'>
+                  <CodeCard 
+                  title="Declaration of changing an index value of array"
+                  language="Java"
+                  code={`cars[0] = "Opel";`}
+                  />
+                </div>
+                <p className='pt-5 pb-1'>After the change, The index value cars[0] will no longer be "Volvo", but "Opel". </p>
+                <div className='pt-3'>
+                  <CodeCard 
+                  title="Declaration of changing an index value of array"
+                  language="Java"
+                  code={`String[] cars = {"Volvo", "BMW", "Ford", "Mazda"};
+cars[0] = "Opel";
+System.out.println(cars[0]);
+// Now outputs Opel instead of Volvo`}
+                  />
+                </div>
+              </div>,
+              'Find an array length',
+              <div className='text-md text-gray-700 pl-5'>
+                <p>To find out how many elements an array has, use the <b>" .length "</b> property:</p>
+                <div className='pt-3'>
+                  <CodeCard 
+                  title="Finding the elements length of an array"
+                  language="Java"
+                  code={`String[] cars = {"Volvo", "BMW", "Ford", "Mazda"};
+System.out.println(cars.length);
+// Outputs 4`}
+                  />
+                </div>
+              </div>,
+              'The new Keyword',
+              <div className='text-md text-gray-700 pl-5'>
+                <p>You can also create an array by specifying its size with <b>new</b>. 
+                  This makes an empty array with space for a fixed number of elements, which you can fill later:</p>
+                <div className='pt-3'>
+                  <CodeCard 
+                  title="Declaration of new array"
+                  language="Java"
+                  code={`String[] cars = new String[4]; // size is 4
+
+cars[0] = "Volvo";
+cars[1] = "BMW";
+cars[2] = "Ford";
+cars[3] = "Mazda";
+
+System.out.println(cars[0]); // Outputs Volvo
+System.out.println(cars[1]); // Outputs BMW
+System.out.println(cars[2]); // Outputs Ford
+System.out.println(cars[3]); // Outputs Mazda`}
+                  />
+                </div>
+              </div>
+            ]
+          }
+        ] 
+      },
+      {
+        id: "importantNotes",
+        title: "Notes To Remember",
+        icon: Book,
+        content: [
+          {
+          subtitle: "Important",
+            items: [
+              'Java comments',
+              'Comment can be used to explain java code, and to make it more readable.',
+              'It can be used to prevent execution when testing alternative code.',
+              <div className='text-md text-slate-700 ml-5'>
+                <p><b>Single-Line comment</b></p>
+                <p>" // "</p>
+                <p><b>Multipl-Line comme</b></p>
+                <p> " /* */ "</p>
+                
+              </div>
+            ]
+          }
+
+
+        ]
       }
-  ];
+];
 
 export default introToProgramming;

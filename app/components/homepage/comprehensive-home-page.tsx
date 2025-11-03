@@ -103,7 +103,7 @@ export default function ComprehensiveReviewer() {
                 <div>
                   <div className='flex items-center gap-3 p-3 rounded-md hover:bg-gray-100'>
                     <div className="p-2 bg-blue-100 rounded-lg">
-                      <ComputerIcon className="w-6 h-6 text-blue-600" />
+                      <CodeIcon className="w-6 h-6 text-blue-600" />
                     </div>
                     <h2 className="text-md font-bold text-slate -800">Intro To Programming</h2> 
                     <label className='popup'>
